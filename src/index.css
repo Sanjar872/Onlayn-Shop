@@ -19,6 +19,7 @@ p, h1, h2, h3, h4, h5 {
 
 .container {
     margin: 40px;
+    border: 1px solid rgb(58, 49, 49);
 }
 
 .swiper {
@@ -53,4 +54,10 @@ p, h1, h2, h3, h4, h5 {
     height: 600px;
     object-fit: cover;
     border-radius: 10px;
+}
+.swiper-button-prev{
+    display: none !important;
+}
+.swiper-button-next{
+    display: none !important;
 }
