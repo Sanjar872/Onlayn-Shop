@@ -1,0 +1,39 @@
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.product {
+    cursor: pointer;
+}
+
+.product img {
+    width: 100%;
+    height: 380px;
+    object-fit: contain;
+}
+
+.product p {
+    margin: 5px 50px;
+}
+
+.productPrice {
+    color: #A18A68;
+    font-weight: bold;
+}
+
+.productTitle {
+    height: 55px;
+}
+
+@media (max-width: 600px) {
+    .product p{
+        margin: 0;
+    }
+
+    .productTitle {
+        height: auto;
+    }
+}

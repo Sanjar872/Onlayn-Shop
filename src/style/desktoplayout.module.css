@@ -1,0 +1,14 @@
+.container {
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+}
+
+.navbar li:nth-child(1) {
+    width: 60%;
+}
