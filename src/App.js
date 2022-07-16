@@ -5,24 +5,26 @@ import Products from "./components/Home/Products";
 import Footer from "./components/Footer/Footer";
 import Shop from './components/Shop/shop'
 import Blog from './components/Blog/Blog'
-import OurStory from "./components/Layout/OurStory";
+import OurStory from "./components/OurStory/ourstory";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./components/Home/Home";
 function App() {
    return (
       <div>
          <Wrapper>
             <DesktopLayout />
-            <Router>
+            
             <Routes>
+               <Route path="/home" element={<Home/>}/>
                <Route path="/shop" element={<Shop/>}/>
                <Route path="/blog" element={<Blog/>}/>
                <Route path="/ourstory" element={<OurStory/>}/>
 
             </Routes>
-            </Router>
-            <Banner />
-            <Products />
+            
+            {/* <Banner /> */}
+            {/* <Products /> */}
             <Footer />
          </Wrapper>
       </div>
